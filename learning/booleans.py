@@ -1,5 +1,59 @@
+# video notes
 
-############################################################################
+# comparisons: 
+# equal: ==
+# not equal: !=
+# greater than: >
+# less than: <
+# greater or equal: >=
+# less or equal: <=
+# object identity: is
+
+language = 'Python'
+
+if language == 'Python':
+    print('Language is Python')
+elif language == 'Java':
+    print('Language is Java')
+elif language == 'Javascript':
+    print('Language is Javascript')
+else: 
+    print('No match')
+
+# and
+# or 
+# not
+    
+user = 'Admin'
+logged_in = True
+if user == 'Admin' or 'logged_in':
+    print('Admin page')
+else:
+    print('Bad Creds')
+    
+a = [1,2,3]
+b = a
+print(a is b)
+
+print(id(a))
+print(id(b))
+print(a is b)
+
+# false values:
+# false
+# none
+# zero of any number type 
+# any empty sequence. for example, '', (),[].
+# any empty mapping. for example, {}.
+
+condition = False
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+
+
+########## ##################################################################
 # Boolean expressions are statements that can be either True or False. In Python, the boolean data type is represented by the built-in data type bool.
 
 # Boolean expressions are commonly used for decision-making in programming.
@@ -47,11 +101,11 @@
 
 # and: Returns True if both statements are true.
 
-# x = 5
-# print(x > 3 and x < 10)  # True
-# age = 18
-# print(age >= 18 and age < 65)  # True
-# print(age < 18 or age >= 65)   # False
+x = 5
+print(x > 3 and x < 10)  # True
+age = 18
+print(age >= 18 and age < 65)  # True
+print(age < 18 or age >= 65)   # False
 # or: Returns True if at least one of the statements is true.
 
 # x = 5
@@ -72,19 +126,19 @@
 # 4. Identity Operators:
 # is: Returns True if both variables are the same object.
 
-# x = [1, 2, 3]
-# y = [1, 2, 3]
-# z = x
-# print(x is z)  # True, because z is the same object as x
-# print(x is y)  # False, because x and y are not the same objects
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+print(x is z)  # True, because z is the same object as x
+print(x is y)  # False, because x and y are not the same objects
 # is not: Returns True if both variables are not the same object.
 
 # x = [1, 2, 3]
 # y = [1, 2, 3]
 # print(x is not y)  # True
-# fruits = ['apple', 'banana', 'cherry']
-# print('apple' in fruits)      # True
-# print('grape' not in fruits)  # True
+fruits = ['apple', 'banana', 'cherry']
+print('apple' in fruits)      # True
+print('grape' not in fruits)  # True
 # a = [1, 2, 3]
 # b = [1, 2, 3]
 # c = a
